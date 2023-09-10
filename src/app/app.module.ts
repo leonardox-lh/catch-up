@@ -21,6 +21,7 @@ import {NgOptimizedImage} from "@angular/common";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     LayoutModule,
     MatToolbarModule,
@@ -31,9 +32,7 @@ import {NgOptimizedImage} from "@angular/common";
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    NgOptimizedImage
-    Mat
-
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
