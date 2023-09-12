@@ -11,6 +11,3 @@ export class Source {
     this.urlToLogo='';
   }
 }
-
-export class SourceEntity {
-}
