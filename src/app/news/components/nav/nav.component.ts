@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {NewsApiService} from "../../services/news-api.service";
 import {LogoApiService} from "../../../shared/services/logo-api.service";
+import {Source} from "../../model/source.entity";
+import {Article} from "../../model/article.entity";
 
 @Component({
   selector: 'app-nav',
@@ -8,8 +10,8 @@ import {LogoApiService} from "../../../shared/services/logo-api.service";
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit{
-  sources:Array<any>=[];
-  articles:Array<any>=[];
+  sources:Array<Source>=[];
+  articles:Array<Article>=[];
   constructor(private newsApi: NewsApiService, private logoApi:LogoApiService) {}
   searchArticlesForSource(source:any):void{
     console.log(`selected source is: ${source.id}`);
